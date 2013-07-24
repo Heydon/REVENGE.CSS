@@ -17,6 +17,6 @@ The premise of `revenge.css` is simple: A *CSS bookmarklet* that uses selectors 
 
 Just drag the following link to your bookmarks. Click the bookmarklet on any page you wish to test. 
 
-<a style="font-size: 2em; padding: 1em; background: pink; font-family: 'comic sans ms', cursive; display: inline-block; color: #000;" href="javascript:(function(){revenge=document.createElement('LINK');revenge.href='http://www.heydonworks.com/css/revenge_buttons.css';revenge.rel='stylesheet';revenge.media='all';document.body.appendChild(revenge);})();" title="REVENGE.CSS">REVENGE.CSS <span style="display:block; margin-top: 0.25em; font-size: 0.7em">(drag me to bookmarks)</span></a>
+<a href="javascript:(function(){revenge=document.createElement('LINK');revenge.href='http://www.heydonworks.com/css/revenge_buttons.css';revenge.rel='stylesheet';revenge.media='all';document.body.appendChild(revenge);})();" title="REVENGE.CSS">REVENGE.CSS</a>
 
 
