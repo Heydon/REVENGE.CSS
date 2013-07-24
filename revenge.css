@@ -1,0 +1,307 @@
+/*!
+* Revenge CSS v 1.0 
+* Copyright 2013, Heydon Pickering: http://www.heydonworks.com
+* Released under Attribution 3.0 Unported license - http://creativecommons.org/licenses/by/3.0/
+* Please leave this comment block intact as attribution
+*/
+
+a:not([href]):after, a[href=""]:after, a[href$="#"]:after, a[href^="javascript"]:after, 
+.button:not(button):not([role="button"]):not([type="button"]):not([type="submit"]):not([type="reset"]):after,
+.btn:not(button):not([role="button"]):not([type="button"]):not([type="submit"]):not([type="reset"]):after, 
+a[class*="button"]:not([role="button"]):after, 
+a[role="button"]:not([href*="/"]):not([href*="."]):not([href*="?"]):after, 
+a[role="button"][href=""]:after, a[role="button"][href$="#"]:after, a[role="button"][href^="javascript"]:after, 
+.button:not(button):not([role="button"]):not(input):after,
+.btn:not(button):not([role="button"]):not(input):after, 
+a[class*="button"]:not([role="button"]):after, 
+a.button[class*="disabled"]:after,  
+a.btn.disabled:after, a[class*="button"][class*="disabled"]:after, 
+form button:not([type]):after, 
+a:empty:not([aria-label]):not([aria-labelledby]):after, 
+button:empty:not([aria-label]):not([aria-labelledby]):after, 
+button:not([aria-label]):not([aria-labelledby]) img:only-child:not([alt]):after, 
+a:not([aria-label]):not([aria-labelledby]) img:only-child:not([alt]):after, 
+.button:not(a):not(button):not(input):after, 
+.btn:not(a):not(button):not(input):after, 
+img:not([alt]):after, 
+img[alt]:not([alt=""]):after, 
+img:not([src]), 
+figcaption:after, 
+form:not([action]):after, 
+label:not([for]):after, 
+input:not([id]):after, 
+textarea:not([rows]):not([cols]):after, 
+fieldset > *:first-child:not([legend]):after, 
+input.required:not([aria-required="true"]):after, 
+textarea.required:not([aria-required="true"]):after, 
+input.disabled:not([disabled]):not([readonly]):after, 
+textarea.disabled:not([disabled]):not([readonly]):after, 
+select.disabled:not([disabled]):not([readonly]):after, 
+button.disabled:not([disabled]):not([readonly]):after, 
+input[type="submit"]:not([value]):after,
+input[type="reset"]:not([value]):after,
+input[type="button"]:not([value]):after, 
+acronym:after, applet:after, basefont:after, center:after, dir:after, 
+font:after, frame:after, frameset:after, isindex:after, listing:after, menu:after, multicol:after, 
+plaintext:after, s:after, strike:after, u:after, xmp:after, bgsound:after, blink:after, comment:after, 
+embed:after, marquee:after, nobr:after, noembed:after, wbr:after, 
+*:empty:not(script):after, 
+section > section:first-child:after, 
+article > section:first-child:after, 
+article > article:first-child:after, 
+section > article:first-child:after, 
+section > aside:first-child:after, 
+aside > aside:first-child:after, 
+article > aside:first-child:after, 
+aside > article:first-child:after, 
+aside > section:first-child:after, 
+body > header:not([role="banner"]):after, 
+body > footer:not([role="contentinfo"]):after, 
+#main:not(main):after, 
+.main:not(main):after, 
+#main-content:not(main):after, 
+.main-content:not(main):after, 
+#page-content:not(main):after, 
+.page-content:not(main):after, 
+[align]:after, [alink]:after, [background]:after, 
+[bgcolor]:after, [border]:after, [clear]:after, 
+[height]:after, [hspace]:after, [link]:after, 
+[nowrap]:after, [start]:after, [vlink]:after, 
+[vspace]:after, 
+script[language]:after, 
+table[summary]:after, 
+ol > *:not([li]):after, 
+ul > *:not([li]):after, 
+dl > *:not([dt]):not([dd]):after, 
+dt + *:not([dd]):after, 
+abbr div:after, b div:after, i div:after, span div:after, em div:after, 
+strong div:after, small div:after, cite div:after, q div:after, code div:after, 
+label div:after
+{
+   display: inline-block !important;
+   background: pink !important;
+   padding: 0.25em !important;
+   font-family: 'comic sans ms', cursive !important;
+   color: #000 !important;
+   font-size: 14px !important;
+   text-shadow: none !important;
+   font-weight: normal !important;
+}
+
+/**
+* Button and hyperlink errors
+----------------------------------------------------------------------
+*/
+
+a:not([href]):after {
+   content: 'Do you mean for this to be a link or a <button>? It does not link to anything!';
+}
+
+a[href=""]:after, a[href$="#"]:after, a[href^="javascript"]:after {
+   content: 'Do you mean for this to be a <button>? It is a link that does not go anywhere!';
+}
+
+.button:not(button):not([role="button"]):not([type="button"]):not([type="submit"]):not([type="reset"]):after,
+.btn:not(button):not([role="button"]):not([type="button"]):not([type="submit"]):not([type="reset"]):after, 
+a[class*="button"]:not([role="button"]):after {
+   content: 'If you are going to make it look like a button, make it a button, dammit!';
+}
+
+.button:not(a):not(button):not(input):after, 
+.btn:not(a):not(button):not(input):after {
+	content: 'You are not using a standard focusable element for your "button". Can keyboard users focus on it?';
+}
+
+a[role="button"]:not([href*="/"]):not([href*="."]):not([href*="?"]):after, 
+a[role="button"][href=""]:after, a[role="button"][href$="#"]:after, a[role="button"][href^="javascript"]:after {
+   content: 'Either use a proper href fallback or just use a button element.';
+}
+
+a.button[class*="disabled"]:after,
+a.disabled:after,  
+a[class*="button"][class*="disabled"]:after {
+   content: 'You cannot disable a hyperlink. Use a button element with type="disabled".'; 
+}
+
+[class*="toggle"]:not([aria-pressed]) {
+	content: 'If it is toggleable, you should supply an aria-pressed attribute.';
+}
+
+form button:not([type]):after {
+	content: 'Is this a submit button, a reset button or just a button? Use type="submit", type="reset" or type="button".';
+}
+
+a:empty:not([aria-label]):not([aria-labelledby]):after, 
+button:empty:not([aria-label]):not([aria-labelledby]):after, 
+button:not([aria-label]):not([aria-labelledby]) img:only-child:not([alt]):after, 
+a:not([aria-label]):not([aria-labelledby]) img:only-child:not([alt]):after {
+	content: 'All buttons and links should have text content, an image with alt text or an ARIA label.';
+}
+
+/**
+* Images errors
+----------------------------------------------------------------------
+*/
+
+img:not([alt]):after, 
+img[alt]:not([alt=""]):after {
+	content: 'Either add proper alt attribute content or void the alt properly using alt="".';
+}
+
+img:not([src]) {
+	content: 'Add a src attribute to this image placeholder.';
+}
+
+
+figcaption:after {
+	content: '<figcaption>s must belong to parent <figure>s.';
+}
+
+figure figcaption:after {
+	content: '';
+	display: none;
+}
+
+/**
+* Form errors
+----------------------------------------------------------------------
+*/
+
+form:not([action]):after {
+	content: 'Forms must have action attributes.';
+}
+
+input:not([id]):after {
+	content: 'Identify inputs with an ID (paired with a for attr on a label).';
+}
+
+fieldset > *:first-child:not([legend]):after {
+	content: 'Place a legend as the first element in this fieldset.';
+}
+
+input.required:not([aria-required="true"]):after, 
+textarea.required:not([aria-required="true"]):after {
+	content: 'Use the "aria-required" attribute on this form element.';
+}
+
+textarea:not([rows]):not([cols]):after {
+	content: 'Use the rows and cols attrs to define the size of <textarea>s properly.';
+}
+
+input.disabled:not([disabled]):not([readonly]):after, 
+textarea.disabled:not([disabled]):not([readonly]):after, 
+select.disabled:not([disabled]):not([readonly]):after, 
+button.disabled:not([disabled]):not([readonly]):after {
+	content: 'Disable this element properly with the "disabled" attribute.';
+}
+
+input[type="submit"]:not([value]):after,
+input[type="reset"]:not([value]):after,
+input[type="button"]:not([value]):after {
+	content: 'This type of input needs a "value" attribute.';
+}
+
+option[name]:after {
+	content: 'Use ID, not the name attr, on <option> elements.';
+}
+
+/**
+* Deprecated, obsolete and proprietary elements
+----------------------------------------------------------------------
+*/
+
+acronym:after, applet:after, basefont:after, big:after, center:after, dir:after, 
+font:after, frame:after, frameset:after, isindex:after, listing:after, menu:after, multicol:after, 
+plaintext:after, s:after, strike:after, u:after, xmp:after, bgsound:after, blink:after, comment:after, 
+embed:after, marquee:after, nobr:after, noembed:after, wbr:after {
+	content: 'This element is deprecated, non-standard or obsolete.';
+}
+
+/**
+* Empty elements
+----------------------------------------------------------------------
+*/
+
+*:empty:not(script):after {
+	content: 'This element is empty. Why?';
+}
+
+/**
+* Sectioning elements, headers and footers
+----------------------------------------------------------------------
+*/
+
+section > section:first-child:after, 
+article > section:first-child:after, 
+article > article:first-child:after, 
+section > article:first-child:after, 
+section > aside:first-child:after, 
+aside > aside:first-child:after, 
+article > aside:first-child:after, 
+aside > article:first-child:after, 
+aside > section:first-child:after {
+	content: 'Sectioning elems are not arbitrary wrappers. Use <div>s here.';
+}
+
+body > header:not([role="banner"]):after {
+	content: 'Use should use role="banner" on this header element.';
+}
+
+body > footer:not([role="contentinfo"]):after {
+	content: 'Use role="contentinfo" on this footer element.';
+}
+
+#main:not(main):after, 
+.main:not(main):after, 
+#main-content:not(main):after, 
+.main-content:not(main):after, 
+#page-content:not(main):after, 
+.page-content:not(main):after {
+	content: 'Use the standard <main> element to mark up the main part of your page.';
+}
+
+/**
+* Bad attribute usage
+----------------------------------------------------------------------
+*/
+
+[align]:after, [alink]:after, [background]:after, [bgcolor]:after, [border]:after, [clear]:after, [height]:after, [hspace]:after, [link]:after, [nowrap]:after, [start]:after, [vlink]:after, [vspace]:after {
+	content: 'You are using a deprecated attribute. Use CSS instead.';
+}
+
+script[language]:after {
+	content: 'The language attribute is superceded by type. Use type.';
+}
+
+table[summary]:after {
+	content: 'The summary attribute is deprecated. Perhaps use the <caption> element.';
+}
+
+/**
+* List errors
+----------------------------------------------------------------------
+*/
+
+ol > *:not([li]):after, 
+ul > *:not([li]):after {
+	content: 'Only <li> can be a direct child of <ul> or <ol>.';
+}
+
+dl > *:not([dt]):not([dd]):after {
+	content: 'This element does not belong directly inside a definition list.';
+}
+
+dt + *:not([dd]):after {
+	content: 'Definitions must follow definition titles.';
+}
+
+/**
+* <div>s in the wrong places
+----------------------------------------------------------------------
+*/
+
+abbr div:after, b div:after, i div:after, span div:after, em div:after, 
+strong div:after, small div:after, cite div:after, q div:after, code div:after, 
+label div:after {
+	content: 'Do not put <div>s inside inline elements.';
+}
