@@ -222,7 +222,7 @@ embed:after, marquee:after, nobr:after, noembed:after, wbr:after {
 ----------------------------------------------------------------------
 */
 
-*:empty:not(script):after {
+*:empty:not(script):not(input):not(br):not(img):not(hr):after {
 	content: 'This element is empty. Why?';
 }
 
