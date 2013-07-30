@@ -57,6 +57,9 @@ aside > article:first-child:after,
 aside > section:first-child:after, 
 body > header:not([role="banner"]):after, 
 body > footer:not([role="contentinfo"]):after, 
+section [role="banner"]:after, section [role="contentinfo"]:after, 
+article [role="banner"]:after, article [role="contentinfo"]:after, 
+aside [role="banner"]:after, aside [role="contentinfo"]:after, 
 #main:not(main):after, 
 .main:not(main):after, 
 #main-content:not(main):after, 
@@ -249,6 +252,12 @@ body > header:not([role="banner"]):after {
 
 body > footer:not([role="contentinfo"]):after {
 	content: 'Use role="contentinfo" on this footer element.';
+}
+
+section [role="banner"]:after, section [role="contentinfo"]:after, 
+article [role="banner"]:after, article [role="contentinfo"]:after, 
+aside [role="banner"]:after, aside [role="contentinfo"]:after {
+	content: 'Do not put [role="banner"] or [role="contentinfo"] inside a subsection.';
 }
 
 #main:not(main):after, 
