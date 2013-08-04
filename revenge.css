@@ -188,7 +188,7 @@ embed:after, marquee:after, nobr:after, noembed:after, wbr:after {
 ----------------------------------------------------------------------
 */
 
-*:empty:not(script):not(input):not(br):not(img):not(hr):after {
+*:empty:not(script):not(input):not(br):not(img):not(hr):not(embed):not(area):not(command):not(col):not(param):not(source):not(track):not(wbr):not(base):not(keygen):after {
 	content: 'This element is empty. Why?';
 }
 
