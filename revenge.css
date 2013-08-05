@@ -25,7 +25,7 @@ a:not([aria-label]):not([aria-labelledby]) img:only-child:not([alt]):after,
 .btn:not(a):not(button):not(input):after, 
 img:not([alt]):after, 
 img[alt]:not([alt=""]):after, 
-img:not([src]), 
+img:not([src]):after, 
 figcaption:after, 
 form:not([action]):after,  
 fieldset > *:first-child:not([legend]):after, 
@@ -140,7 +140,7 @@ img[alt]:not([alt=""]):after {
 	content: 'Either add proper alt attribute content or void the alt properly using alt="".' !important;
 }
 
-img:not([src]) {
+img:not([src]):after {
 	content: 'Add a src attribute to this image placeholder.' !important;
 }
 
