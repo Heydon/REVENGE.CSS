@@ -62,10 +62,10 @@ aside [role="banner"]:after, aside [role="contentinfo"]:after,
 [vspace]:after, 
 script[language]:after, 
 table[summary]:after, 
-ol > *:not([li]):after, 
-ul > *:not([li]):after, 
-dl > *:not([dt]):not([dd]):after, 
-dt + *:not([dd]):after, 
+ol > *:not(li):after, 
+ul > *:not(li):after, 
+dl > *:not(dt):not(dd):after, 
+dt + *:not(dd):after, 
 abbr div:after, b div:after, i div:after, span div:after, em div:after, 
 strong div:after, small div:after, cite div:after, q div:after, code div:after, 
 label div:after
@@ -254,16 +254,16 @@ table[summary]:after {
 ----------------------------------------------------------------------
 */
 
-ol > *:not([li]):after, 
-ul > *:not([li]):after {
+ol > *:not(li):after, 
+ul > *:not(li):after {
 	content: 'Only <li> can be a direct child of <ul> or <ol>.' !important;
 }
 
-dl > *:not([dt]):not([dd]):after {
+dl > *:not(dt):not(dd):after {
 	content: 'This element does not belong directly inside a definition list.' !important;
 }
 
-dt + *:not([dd]):after {
+dt + *:not(dd):after {
 	content: 'Definitions must follow definition titles.' !important;
 }
 
