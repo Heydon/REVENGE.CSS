@@ -78,6 +78,7 @@ label div:after
    font-size: 14px !important;
    text-shadow: none !important;
    font-weight: normal !important;
+   font-style: normal !important;
 }
 
 /**
