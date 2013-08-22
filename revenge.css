@@ -113,7 +113,7 @@ a[role="button"][href=""]:after, a[role="button"][href$="#"]:after, a[role="butt
 a.button[class*="disabled"]:after,
 a.disabled:after,  
 a[class*="button"][class*="disabled"]:after {
-   content: 'You cannot disable a hyperlink. Use a button element with type="disabled".' !important; 
+   content: 'You cannot disable a hyperlink. Use a button element with disabled="disabled".' !important; 
 }
 
 [class*="toggle"]:not([aria-pressed]) {
