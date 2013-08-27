@@ -210,11 +210,11 @@ aside > section:first-child:after {
 	content: 'Sectioning elems are not arbitrary wrappers. Use <div>s here.' !important;
 }
 
-body > header:not([role="banner"]):after {
+*:not(section):not(article):not(aside) header:not([role="banner"]):after {
 	content: 'Use should use role="banner" on this header element.' !important;
 }
 
-body > footer:not([role="contentinfo"]):after {
+*:not(section):not(article):not(aside) footer:not([role="contentinfo"]):after {
 	content: 'Use role="contentinfo" on this footer element.' !important;
 }
 
