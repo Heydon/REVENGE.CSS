@@ -44,8 +44,8 @@ aside > aside:first-child:after,
 article > aside:first-child:after, 
 aside > article:first-child:after, 
 aside > section:first-child:after, 
-*:not(section):not(article):not(aside) header:not([role="banner"]):after, 
-*:not(section):not(article):not(aside) footer:not([role="contentinfo"]):after, 
+body > header:not([role="banner"]):after, 
+body > footer:not([role="contentinfo"]):after, 
 section [role="banner"]:after, section [role="contentinfo"]:after, 
 article [role="banner"]:after, article [role="contentinfo"]:after, 
 aside [role="banner"]:after, aside [role="contentinfo"]:after, 
@@ -210,11 +210,11 @@ aside > section:first-child:after {
 	content: 'Sectioning elems are not arbitrary wrappers. Use <div>s here.' !important;
 }
 
-*:not(section):not(article):not(aside) header:not([role="banner"]):after {
+body > header:not([role="banner"]):after {
 	content: 'Use should use role="banner" on this header element.' !important;
 }
 
-*:not(section):not(article):not(aside) footer:not([role="contentinfo"]):after {
+body > footer:not([role="contentinfo"]):after {
 	content: 'Use role="contentinfo" on this footer element.' !important;
 }
 
