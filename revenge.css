@@ -28,7 +28,7 @@ img[alt]:not([alt=""]):after,
 img:not([src]):after, 
 figcaption:after, 
 form:not([action]):after,  
-fieldset > *:first-child:not([legend]):after, 
+fieldset > *:first-child:not(legend):after, 
 button.disabled:not([disabled]):not([readonly]):after, 
 acronym:after, applet:after, basefont:after, center:after, dir:after, 
 font:after, frame:after, frameset:after, isindex:after, listing:after, menu:after, multicol:after, 
@@ -164,7 +164,7 @@ form:not([action]):after {
 	content: 'Forms must have action attributes.' !important;
 }
 
-fieldset > *:first-child:not([legend]):after {
+fieldset > *:first-child:not(legend):after {
 	content: 'Place a legend as the first element in this fieldset.' !important;
 }
 
