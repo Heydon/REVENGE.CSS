@@ -22,10 +22,7 @@ button:empty:not([aria-label]):not([aria-labelledby]):after,
 button:not([aria-label]):not([aria-labelledby]) img:only-child:not([alt]):after, 
 a:not([aria-label]):not([aria-labelledby]) img:only-child:not([alt]):after, 
 .button:not(a):not(button):not(input):after, 
-.btn:not(a):not(button):not(input):after, 
-img:not([alt]):after, 
-img[alt]:not([alt=""]):after, 
-img:not([src]):after, 
+.btn:not(a):not(button):not(input):after,  
 figcaption:after, 
 form:not([action]):after,  
 fieldset > *:first-child:not(legend):after, 
@@ -130,21 +127,6 @@ button:not([aria-label]):not([aria-labelledby]) img:only-child:not([alt]):after,
 a:not([aria-label]):not([aria-labelledby]) img:only-child:not([alt]):after {
 	content: 'All buttons and links should have text content, an image with alt text or an ARIA label.' !important;
 }
-
-/**
-* Images errors
-----------------------------------------------------------------------
-*/
-
-img:not([alt]):after, 
-img[alt]:not([alt=""]):after {
-	content: 'Either add proper alt attribute content or void the alt properly using alt="".' !important;
-}
-
-img:not([src]):after {
-	content: 'Add a src attribute to this image placeholder.' !important;
-}
-
 
 figcaption:after {
 	content: '<figcaption>s must belong to parent <figure>s.' !important;
