@@ -65,7 +65,8 @@ dl > *:not(dt):not(dd):after,
 dt + *:not(dd):after, 
 abbr div:after, b div:after, i div:after, span div:after, em div:after, 
 strong div:after, small div:after, cite div:after, q div:after, code div:after, 
-label div:after
+label div:after,
+[tabindex]:not([tabindex="0"]):not([tabindex="-1"]):after
 {
    display: inline-block !important;
    background: #dc143c !important;
@@ -260,3 +261,13 @@ strong div:after, small div:after, cite div:after, q div:after, code div:after,
 label div:after {
 	content: 'Do not put <div>s inside inline elements.' !important;
 }
+
+/**
+* Crazy tabindexing
+----------------------------------------------------------------------
+*/
+
+[tabindex]:not([tabindex="0"]):not([tabindex="-1"]):after {
+	content: 'Do not disrupt the natural tab order.';
+}
+
