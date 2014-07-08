@@ -276,7 +276,7 @@ label div:after {
 */
 
 [tabindex]:not([tabindex="0"]):not([tabindex="-1"]):after {
-	content: 'Do not disrupt the natural tab order.';
+	content: 'Do not disrupt the natural tab order.' !important;
 }
 
 /* Boot Crap (specific to Twitter BootStrap class misuse)
@@ -287,20 +287,20 @@ Use a class-based style on the preceeding or proceeding element or use role="sep
 on the item in question */
 
 li.divider:not([role="separator"]):after, li:empty:not([role="separator"]):after {
-	content: 'Do not use list items to divide up lists unless they have role = separator';
+	content: 'Do not use list items to divide up lists unless they have role = separator' !important;
 }
 
 /* For obvious reasons, a header for a list should not be an item in that list. 
 Make two lists! */
 
 li.dropdown-header:after {
-	content: 'Do not use list items as headers for lists, obvs';
+	content: 'Do not use list items as headers for lists, obvs' !important;
 }
 
 /* Only <button>s and, to a lesser extent, <a>s WITH HREFS are keyboard functional as "buttons" */
 
 .btn:not(button):not([href]):after {
-	content: 'This is not an accessible control. Use a <button> or a <a> with href.';
+	content: 'This is not an accessible control. Use a <button> or a <a> with href.' !important;
 }
 
 /* Disabled links and buttons should be disabled correctly */
@@ -309,11 +309,11 @@ li.disabled > a[href]:not([tabindex="-1"]):after,
 li.disabled > button:not([disabled]):after, 
 a.disabled[href]:after,
 button.disabled:not([disabled]):after {
-	content: 'Disable buttons with disabled attr and links by removing href';
+	content: 'Disable buttons with disabled attr and links by removing href' !important;
 }
 
 /* The submenu should be indicated with aria-haspopup */
 
 [data-toggle="dropdown"]:not([aria-haspopup]):after {
-	content: 'Indicate the hidden menu with aria-haspopup';
+	content: 'Indicate the hidden menu with aria-haspopup' !important;
 }
