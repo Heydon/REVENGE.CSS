@@ -275,7 +275,7 @@ aside > section:first-child:after {
 }
 
 body > header:not([role="banner"]):after, body > div > header:not([role="banner"]):after {
-	content: 'Use should use role="banner" on this header element.' !important;
+	content: 'Use role="banner" on this header element.' !important;
 }
 
 body > footer:not([role="contentinfo"]):after, body > div > footer:not([role="contentinfo"]):after {
