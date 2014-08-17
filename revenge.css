@@ -179,8 +179,8 @@ a[class*="button"]:not([role="button"]):after {
    content: 'If you are going to make it look like a button, make it a button, dammit!' !important;
 }
 
-.button:not(a):not(button):not(input):not([tabindex]):after, 
-.btn:not(a):not(button):not(input):not([tabindex]):after {
+.button:not(a):not(button):not(input):after, 
+.btn:not(a):not(button):not(input):after {
 	content: 'You are not using a standard focusable element for your "button". Can keyboard users focus on it?' !important;
 }
 
