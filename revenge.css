@@ -78,76 +78,76 @@ button.disabled:not([disabled]),
 	overflow: visible !important;	
 }
 
-a:not([href]):after, a[href=""]:after, a[href$="#"]:after, a[href^="javascript"]:after, 
-.button:not(button):not([role="button"]):not([type="button"]):not([type="submit"]):not([type="reset"]):after,
-.btn:not(button):not([role="button"]):not([type="button"]):not([type="submit"]):not([type="reset"]):after, 
-a[class*="button"]:not([role="button"]):after, 
-a[role="button"]:not([href*="/"]):not([href*="."]):not([href*="?"]):after, 
-a[role="button"][href=""]:after, a[role="button"][href$="#"]:after, a[role="button"][href^="javascript"]:after, 
-.button:not(button):not([role="button"]):not(input):after,
-.btn:not(button):not([role="button"]):not(input):after, 
-a[class*="button"]:not([role="button"]):after, 
-a.button[class*="disabled"]:after,  
-a.btn.disabled:after, a[class*="button"][class*="disabled"]:after, 
-form button:not([type]):after, 
-a:empty:not([aria-label]):not([aria-labelledby]):after, 
-button:empty:not([aria-label]):not([aria-labelledby]):after, 
-button:not([aria-label]):not([aria-labelledby]) img:only-child:not([alt]):after, 
-a:not([aria-label]):not([aria-labelledby]) img:only-child:not([alt]):after, 
-.button:not(a):not(button):not(input):after, 
-.btn:not(a):not(button):not(input):after,  
-figcaption:after, 
-form:not([action]):after,  
-fieldset > *:first-child:not(legend):after, 
-button.disabled:not([disabled]):not([readonly]):after, 
-acronym:after, applet:after, basefont:after, center:after, dir:after, 
-font:after, frame:after, frameset:after, isindex:after, listing:after, menu:after, multicol:after, 
-plaintext:after, s:after, strike:after, u:after, xmp:after, bgsound:after, blink:after, comment:after, 
-embed:after, marquee:after, nobr:after, noembed:after, wbr:after, 
-*:empty:not(script):after, 
-section > section:first-child:after, 
-article > section:first-child:after, 
-article > article:first-child:after, 
-section > article:first-child:after, 
-section > aside:first-child:after, 
-aside > aside:first-child:after, 
-article > aside:first-child:after, 
-aside > article:first-child:after, 
-aside > section:first-child:after, 
-body > header:not([role="banner"]):after, body > div > header:not([role="banner"]):after,  
-body > footer:not([role="contentinfo"]):after, body > div > footer:not([role="contentinfo"]):after, 
-section [role="banner"]:after, section [role="contentinfo"]:after, 
-article [role="banner"]:after, article [role="contentinfo"]:after, 
-aside [role="banner"]:after, aside [role="contentinfo"]:after, 
-#main:not(main):after, 
-.main:not(main):after, 
-#main-content:not(main):after, 
-.main-content:not(main):after, 
-#page-content:not(main):after, 
-.page-content:not(main):after, 
-[align]:after, [alink]:after, [background]:after, 
-[bgcolor]:after, [border]:after, [clear]:after, 
-[height]:after, [hspace]:after, [link]:after, 
-[nowrap]:after, [start]:after, [vlink]:after, 
-[vspace]:after, 
-script[language]:after, 
-table[summary]:after, 
-ol > *:not(li):after, 
-ul > *:not(li):after, 
-dl > *:not(dt):not(dd):after, 
-dt + *:not(dd):after, 
-abbr div:after, b div:after, i div:after, span div:after, em div:after, 
-strong div:after, small div:after, cite div:after, q div:after, code div:after, 
-label div:after,
-[tabindex]:not([tabindex="0"]):not([tabindex="-1"]):after, 
-li.divider:not([role="separator"]):after, li:empty:not([role="separator"]):after, 
-li.dropdown-header:after,
-.btn:not(button):not([href]):after, 
-li.disabled > a[href]:not([tabindex="-1"]):after,
-li.disabled > button:not([disabled]):after, 
-a.disabled[href]:not([tabindex="-1"]):after,
-button.disabled:not([disabled]):after, 
-[data-toggle="dropdown"]:not([aria-haspopup]):after
+a:not([href])::after, a[href=""]::after, a[href$="#"]::after, a[href^="javascript"]::after, 
+.button:not(button):not([role="button"]):not([type="button"]):not([type="submit"]):not([type="reset"])::after,
+.btn:not(button):not([role="button"]):not([type="button"]):not([type="submit"]):not([type="reset"])::after, 
+a[class*="button"]:not([role="button"])::after, 
+a[role="button"]:not([href*="/"]):not([href*="."]):not([href*="?"])::after, 
+a[role="button"][href=""]::after, a[role="button"][href$="#"]::after, a[role="button"][href^="javascript"]::after, 
+.button:not(button):not([role="button"]):not(input)::after,
+.btn:not(button):not([role="button"]):not(input)::after, 
+a[class*="button"]:not([role="button"])::after, 
+a.button[class*="disabled"]::after,  
+a.btn.disabled::after, a[class*="button"][class*="disabled"]::after, 
+form button:not([type])::after, 
+a:empty:not([aria-label]):not([aria-labelledby])::after, 
+button:empty:not([aria-label]):not([aria-labelledby])::after, 
+button:not([aria-label]):not([aria-labelledby]) img:only-child:not([alt])::after, 
+a:not([aria-label]):not([aria-labelledby]) img:only-child:not([alt])::after, 
+.button:not(a):not(button):not(input)::after, 
+.btn:not(a):not(button):not(input)::after,  
+figcaption::after, 
+form:not([action])::after,  
+fieldset > *:first-child:not(legend)::after, 
+button.disabled:not([disabled]):not([readonly])::after, 
+acronym::after, applet::after, basefont::after, center::after, dir::after, 
+font::after, frame::after, frameset::after, isindex::after, listing::after, menu::after, multicol::after, 
+plaintext::after, s::after, strike::after, u::after, xmp::after, bgsound::after, blink::after, comment::after, 
+embed::after, marquee::after, nobr::after, noembed::after, wbr::after, 
+*:empty:not(script)::after, 
+section > section:first-child::after, 
+article > section:first-child::after, 
+article > article:first-child::after, 
+section > article:first-child::after, 
+section > aside:first-child::after, 
+aside > aside:first-child::after, 
+article > aside:first-child::after, 
+aside > article:first-child::after, 
+aside > section:first-child::after, 
+body > header:not([role="banner"])::after, body > div > header:not([role="banner"])::after,  
+body > footer:not([role="contentinfo"])::after, body > div > footer:not([role="contentinfo"])::after, 
+section [role="banner"]::after, section [role="contentinfo"]::after, 
+article [role="banner"]::after, article [role="contentinfo"]::after, 
+aside [role="banner"]::after, aside [role="contentinfo"]::after, 
+#main:not(main)::after, 
+.main:not(main)::after, 
+#main-content:not(main)::after, 
+.main-content:not(main)::after, 
+#page-content:not(main)::after, 
+.page-content:not(main)::after, 
+[align]::after, [alink]::after, [background]::after, 
+[bgcolor]::after, [border]::after, [clear]::after, 
+[height]::after, [hspace]::after, [link]::after, 
+[nowrap]::after, [start]::after, [vlink]::after, 
+[vspace]::after, 
+script[language]::after, 
+table[summary]::after, 
+ol > *:not(li)::after, 
+ul > *:not(li)::after, 
+dl > *:not(dt):not(dd)::after, 
+dt + *:not(dd)::after, 
+abbr div::after, b div::after, i div::after, span div::after, em div::after, 
+strong div::after, small div::after, cite div::after, q div::after, code div::after, 
+label div::after,
+[tabindex]:not([tabindex="0"]):not([tabindex="-1"])::after, 
+li.divider:not([role="separator"])::after, li:empty:not([role="separator"])::after, 
+li.dropdown-header::after,
+.btn:not(button):not([href])::after, 
+li.disabled > a[href]:not([tabindex="-1"])::after,
+li.disabled > button:not([disabled])::after, 
+a.disabled[href]:not([tabindex="-1"])::after,
+button.disabled:not([disabled])::after, 
+[data-toggle="dropdown"]:not([aria-haspopup])::after
 {
    display: inline-block !important;
    background: #dc143c !important;
@@ -165,33 +165,33 @@ button.disabled:not([disabled]):after,
 ----------------------------------------------------------------------
 */
 
-a:not([href]):after {
+a:not([href])::after {
    content: 'Do you mean for this to be a link or a <button>? It does not link to anything!' !important;
 }
 
-a[href=""]:after, a[href$="#"]:after, a[href^="javascript"]:after {
+a[href=""]::after, a[href$="#"]::after, a[href^="javascript"]::after {
    content: 'Do you mean for this to be a <button>? It is a link that does not go anywhere!' !important;
 }
 
-.button:not(button):not([role="button"]):not([type="button"]):not([type="submit"]):not([type="reset"]):after,
-.btn:not(button):not([role="button"]):not([type="button"]):not([type="submit"]):not([type="reset"]):after, 
-a[class*="button"]:not([role="button"]):after {
+.button:not(button):not([role="button"]):not([type="button"]):not([type="submit"]):not([type="reset"])::after,
+.btn:not(button):not([role="button"]):not([type="button"]):not([type="submit"]):not([type="reset"])::after, 
+a[class*="button"]:not([role="button"])::after {
    content: 'If you are going to make it look like a button, make it a button, dammit!' !important;
 }
 
-.button:not(a):not(button):not(input):not([tabindex]):after, 
-.btn:not(a):not(button):not(input):not([tabindex]):after {
+.button:not(a):not(button):not(input):not([tabindex])::after, 
+.btn:not(a):not(button):not(input):not([tabindex])::after {
 	content: 'You are not using a standard focusable element for your "button". Can keyboard users focus on it?' !important;
 }
 
-a[role="button"]:not([href*="/"]):not([href*="."]):not([href*="?"]):after, 
-a[role="button"][href=""]:after, a[role="button"][href$="#"]:after, a[role="button"][href^="javascript"]:after {
+a[role="button"]:not([href*="/"]):not([href*="."]):not([href*="?"])::after, 
+a[role="button"][href=""]::after, a[role="button"][href$="#"]::after, a[role="button"][href^="javascript"]::after {
    content: 'Either use a proper href fallback or just use a button element.' !important;
 }
 
-a.button[class*="disabled"]:after,
-a.disabled:after,  
-a[class*="button"][class*="disabled"]:after {
+a.button[class*="disabled"]::after,
+a.disabled::after,  
+a[class*="button"][class*="disabled"]::after {
    content: 'You cannot disable a hyperlink. Use a button element with disabled="disabled".' !important; 
 }
 
@@ -199,22 +199,22 @@ a[class*="button"][class*="disabled"]:after {
 	content: 'If it is toggleable, you should supply an aria-pressed attribute.' !important;
 }
 
-form button:not([type]):after {
+form button:not([type])::after {
 	content: 'Is this a submit button, a reset button or just a button? Use type="submit", type="reset" or type="button".' !important;
 }
 
-a:empty:not([aria-label]):not([aria-labelledby]):after, 
-button:empty:not([aria-label]):not([aria-labelledby]):after, 
-button:not([aria-label]):not([aria-labelledby]) img:only-child:not([alt]):after, 
-a:not([aria-label]):not([aria-labelledby]) img:only-child:not([alt]):after {
+a:empty:not([aria-label]):not([aria-labelledby])::after, 
+button:empty:not([aria-label]):not([aria-labelledby])::after, 
+button:not([aria-label]):not([aria-labelledby]) img:only-child:not([alt])::after, 
+a:not([aria-label]):not([aria-labelledby]) img:only-child:not([alt])::after {
 	content: 'All buttons and links should have text content, an image with alt text or an ARIA label.' !important;
 }
 
-figcaption:after {
+figcaption::after {
 	content: '<figcaption>s must belong to parent <figure>s.' !important;
 }
 
-figure figcaption:after {
+figure figcaption::after {
 	content: '' !important;
 	display: none !important;
 }
@@ -224,15 +224,15 @@ figure figcaption:after {
 ----------------------------------------------------------------------
 */
 
-form:not([action]):after {
+form:not([action])::after {
 	content: 'Forms must have action attributes.' !important;
 }
 
-fieldset > *:first-child:not(legend):after {
+fieldset > *:first-child:not(legend)::after {
 	content: 'Place a legend as the first element in this fieldset.' !important;
 }
 
-button.disabled:not([disabled]):not([readonly]):after {
+button.disabled:not([disabled]):not([readonly])::after {
 	content: 'Use a disabled or readonly attribute on this button.' !important;
 }
 
@@ -241,10 +241,10 @@ button.disabled:not([disabled]):not([readonly]):after {
 ----------------------------------------------------------------------
 */
 
-acronym:after, applet:after, basefont:after, big:after, center:after, dir:after, 
-font:after, frame:after, frameset:after, isindex:after, listing:after, menu:after, multicol:after, 
-plaintext:after, strike:after, u:after, xmp:after, bgsound:after, blink:after, comment:after, 
-embed:after, marquee:after, nobr:after, noembed:after, wbr:after {
+acronym::after, applet::after, basefont::after, big::after, center::after, dir::after, 
+font::after, frame::after, frameset::after, isindex::after, listing::after, menu::after, multicol::after, 
+plaintext::after, strike::after, u::after, xmp::after, bgsound::after, blink::after, comment::after, 
+embed::after, marquee::after, nobr::after, noembed::after, wbr::after {
 	content: 'This element is deprecated, non-standard or obsolete.' !important;
 }
 
@@ -253,7 +253,7 @@ embed:after, marquee:after, nobr:after, noembed:after, wbr:after {
 ----------------------------------------------------------------------
 */
 
-*:empty:not(script):not(input):not(br):not(img):not(link):not(hr):not(embed):not(area):not(command):not(col):not(param):not(source):not(track):not(wbr):not(base):not(keygen):after {
+*:empty:not(script):not(input):not(br):not(img):not(link):not(hr):not(embed):not(area):not(command):not(col):not(param):not(source):not(track):not(wbr):not(base):not(keygen)::after {
 	content: 'This element is empty. Why?' !important;
 }
 
@@ -262,38 +262,38 @@ embed:after, marquee:after, nobr:after, noembed:after, wbr:after {
 ----------------------------------------------------------------------
 */
 
-section > section:first-child:after, 
-article > section:first-child:after, 
-article > article:first-child:after, 
-section > article:first-child:after, 
-section > aside:first-child:after, 
-aside > aside:first-child:after, 
-article > aside:first-child:after, 
-aside > article:first-child:after, 
-aside > section:first-child:after {
+section > section:first-child::after, 
+article > section:first-child::after, 
+article > article:first-child::after, 
+section > article:first-child::after, 
+section > aside:first-child::after, 
+aside > aside:first-child::after, 
+article > aside:first-child::after, 
+aside > article:first-child::after, 
+aside > section:first-child::after {
 	content: 'Sectioning elems are not arbitrary wrappers. Use <div>s here.' !important;
 }
 
-body > header:not([role="banner"]):after, body > div > header:not([role="banner"]):after {
+body > header:not([role="banner"])::after, body > div > header:not([role="banner"])::after {
 	content: 'Use role="banner" on this header element.' !important;
 }
 
-body > footer:not([role="contentinfo"]):after, body > div > footer:not([role="contentinfo"]):after {
+body > footer:not([role="contentinfo"])::after, body > div > footer:not([role="contentinfo"])::after {
 	content: 'Use role="contentinfo" on this footer element.' !important;
 }
 
-section [role="banner"]:after, section [role="contentinfo"]:after, 
-article [role="banner"]:after, article [role="contentinfo"]:after, 
-aside [role="banner"]:after, aside [role="contentinfo"]:after {
+section [role="banner"]::after, section [role="contentinfo"]::after, 
+article [role="banner"]::after, article [role="contentinfo"]::after, 
+aside [role="banner"]::after, aside [role="contentinfo"]::after {
 	content: 'Do not put [role="banner"] or [role="contentinfo"] inside a subsection.' !important;
 }
 
-#main:not(main):after, 
-.main:not(main):after, 
-#main-content:not(main):after, 
-.main-content:not(main):after, 
-#page-content:not(main):after, 
-.page-content:not(main):after {
+#main:not(main)::after, 
+.main:not(main)::after, 
+#main-content:not(main)::after, 
+.main-content:not(main)::after, 
+#page-content:not(main)::after, 
+.page-content:not(main)::after {
 	content: 'Use the standard <main> element to mark up the main part of your page.' !important;
 }
 
@@ -302,15 +302,15 @@ aside [role="banner"]:after, aside [role="contentinfo"]:after {
 ----------------------------------------------------------------------
 */
 
-[align]:after, [alink]:after, [background]:after, [bgcolor]:after, [border]:after, [clear]:after, [height]:after, [hspace]:after, [link]:after, [nowrap]:after, [start]:after, [vlink]:after, [vspace]:after {
+[align]::after, [alink]::after, [background]::after, [bgcolor]::after, [border]::after, [clear]::after, [height]::after, [hspace]::after, [link]::after, [nowrap]::after, [start]::after, [vlink]::after, [vspace]::after {
 	content: 'You are using a deprecated attribute. Use CSS instead.' !important;
 }
 
-script[language]:after {
+script[language]::after {
 	content: 'The language attribute is superceded by type. Use type.' !important;
 }
 
-table[summary]:after {
+table[summary]::after {
 	content: 'The summary attribute is deprecated. Perhaps use the <caption> element.' !important;
 }
 
@@ -319,16 +319,16 @@ table[summary]:after {
 ----------------------------------------------------------------------
 */
 
-ol > *:not(li):after, 
-ul > *:not(li):after {
+ol > *:not(li)::after, 
+ul > *:not(li)::after {
 	content: 'Only <li> can be a direct child of <ul> or <ol>.' !important;
 }
 
-dl > *:not(dt):not(dd):after {
+dl > *:not(dt):not(dd)::after {
 	content: 'This element does not belong directly inside a definition list.' !important;
 }
 
-dt + *:not(dd):after {
+dt + *:not(dd)::after {
 	content: 'Definitions must follow definition titles.' !important;
 }
 
@@ -337,9 +337,9 @@ dt + *:not(dd):after {
 ----------------------------------------------------------------------
 */
 
-abbr div:after, b div:after, i div:after, span div:after, em div:after, 
-strong div:after, small div:after, cite div:after, q div:after, code div:after, 
-label div:after {
+abbr div::after, b div::after, i div::after, span div::after, em div::after, 
+strong div::after, small div::after, cite div::after, q div::after, code div::after, 
+label div::after {
 	content: 'Do not put <div>s inside inline elements.' !important;
 }
 
@@ -348,7 +348,7 @@ label div:after {
 ----------------------------------------------------------------------
 */
 
-[tabindex]:not([tabindex="0"]):not([tabindex="-1"]):after {
+[tabindex]:not([tabindex="0"]):not([tabindex="-1"])::after {
 	content: 'Do not disrupt the natural tab order.' !important;
 }
 
@@ -359,34 +359,34 @@ label div:after {
 Use a class-based style on the preceeding or proceeding element or use role="separator" 
 on the item in question */
 
-li.divider:not([role="separator"]):after, li:empty:not([role="separator"]):after {
+li.divider:not([role="separator"])::after, li:empty:not([role="separator"])::after {
 	content: 'Do not use list items to divide up lists unless they have role = separator' !important;
 }
 
 /* For obvious reasons, a header for a list should not be an item in that list. 
 Make two lists! */
 
-li.dropdown-header:after {
+li.dropdown-header::after {
 	content: 'Do not use list items as headers for lists, obvs' !important;
 }
 
 /* Only <button>s and, to a lesser extent, <a>s WITH HREFS are keyboard functional as "buttons" */
 
-.btn:not(button):not([href]):after {
+.btn:not(button):not([href])::after {
 	content: 'This is not an accessible control. Use a <button> or a <a> with href.' !important;
 }
 
 /* Disabled links and buttons should be disabled correctly */
 
-li.disabled > a[href]:not([tabindex="-1"]):after,
-li.disabled > button:not([disabled]):after, 
-a.disabled[href]:after,
-button.disabled:not([disabled]):after {
+li.disabled > a[href]:not([tabindex="-1"])::after,
+li.disabled > button:not([disabled])::after, 
+a.disabled[href]::after,
+button.disabled:not([disabled])::after {
 	content: 'Disable buttons with disabled attr and links by removing href' !important;
 }
 
 /* The submenu should be indicated with aria-haspopup */
 
-[data-toggle="dropdown"]:not([aria-haspopup]):after {
+[data-toggle="dropdown"]:not([aria-haspopup])::after {
 	content: 'Indicate the hidden menu with aria-haspopup' !important;
 }
