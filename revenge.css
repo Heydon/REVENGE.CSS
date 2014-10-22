@@ -46,13 +46,11 @@ body > footer:not([role="contentinfo"]), body > div > footer:not([role="contenti
 section [role="banner"], section [role="contentinfo"], 
 article [role="banner"], article [role="contentinfo"], 
 aside [role="banner"], aside [role="contentinfo"], 
-#main:not(main), 
-.main:not(main), 
-#main-content:not(main), 
-.main-content:not(main), 
-#page-content:not(main), 
-.page-content:not(main), 
-[align], [alink], [background], 
+#main:not(main):not([role="main"]),
+#footer:not(footer):not([role="contentinfo"]),
+#header:not(header):not([role="banner"]),
+#banner:not(header):not([role="banner"]), 
+[align], [alink], [background],
 [bgcolor], [border], [clear], 
 [height], [hspace], [link], 
 [nowrap], [start], [vlink], 
@@ -81,14 +79,11 @@ button.disabled:not([disabled]),
 a:not([href])::after, a[href=""]::after, a[href$="#"]::after, a[href^="javascript"]::after, 
 .button:not(button):not([role="button"]):not([type="button"]):not([type="submit"]):not([type="reset"])::after,
 .btn:not(button):not([role="button"]):not([type="button"]):not([type="submit"]):not([type="reset"])::after, 
-a[class*="button"]:not([role="button"])::after, 
 a[role="button"]:not([href*="/"]):not([href*="."]):not([href*="?"])::after, 
 a[role="button"][href=""]::after, a[role="button"][href$="#"]::after, a[role="button"][href^="javascript"]::after, 
-.button:not(button):not([role="button"]):not(input)::after,
-.btn:not(button):not([role="button"]):not(input)::after, 
-a[class*="button"]:not([role="button"])::after, 
-a.button[class*="disabled"]::after,  
-a.btn.disabled::after, a[class*="button"][class*="disabled"]::after, 
+a[href].button[class*="disabled"]::after,
+a[href].disabled::after,  
+a[href][class*="button"][class*="disabled"]::after,
 form button:not([type])::after, 
 a:empty:not([aria-label]):not([aria-labelledby])::after, 
 button:empty:not([aria-label]):not([aria-labelledby])::after, 
@@ -119,12 +114,10 @@ body > footer:not([role="contentinfo"])::after, body > div > footer:not([role="c
 section [role="banner"]::after, section [role="contentinfo"]::after, 
 article [role="banner"]::after, article [role="contentinfo"]::after, 
 aside [role="banner"]::after, aside [role="contentinfo"]::after, 
-#main:not(main)::after, 
-.main:not(main)::after, 
-#main-content:not(main)::after, 
-.main-content:not(main)::after, 
-#page-content:not(main)::after, 
-.page-content:not(main)::after, 
+#main:not(main):not([role="main"])::after,
+#footer:not(footer):not([role="contentinfo"])::after,
+#header:not(header):not([role="banner"])::after,
+#banner:not(header):not([role="banner"])::after, 
 [align]::after, [alink]::after, [background]::after, 
 [bgcolor]::after, [border]::after, [clear]::after, 
 [height]::after, [hspace]::after, [link]::after, 
@@ -173,12 +166,6 @@ a[href=""]::after, a[href$="#"]::after, a[href^="javascript"]::after {
    content: 'Do you mean for this to be a <button>? It is a link that does not go anywhere!' !important;
 }
 
-.button:not(button):not([role="button"]):not([type="button"]):not([type="submit"]):not([type="reset"])::after,
-.btn:not(button):not([role="button"]):not([type="button"]):not([type="submit"]):not([type="reset"])::after, 
-a[class*="button"]:not([role="button"])::after {
-   content: 'If you are going to make it look like a button, make it a button, dammit!' !important;
-}
-
 .button:not(a):not(button):not(input):not([tabindex])::after, 
 .btn:not(a):not(button):not(input):not([tabindex])::after {
 	content: 'You are not using a standard focusable element for your "button". Can keyboard users focus on it?' !important;
@@ -189,10 +176,10 @@ a[role="button"][href=""]::after, a[role="button"][href$="#"]::after, a[role="bu
    content: 'Either use a proper href fallback or just use a button element.' !important;
 }
 
-a.button[class*="disabled"]::after,
-a.disabled::after,  
-a[class*="button"][class*="disabled"]::after {
-   content: 'You cannot disable a hyperlink. Use a button element with disabled="disabled".' !important; 
+a[href].button[class*="disabled"]::after,
+a[href].disabled::after,  
+a[href][class*="button"][class*="disabled"]::after {
+   content: 'You cannot disable a hyperlink. Use a button element with disabled attribute or remove the href' !important; 
 }
 
 [class*="toggle"]:not([aria-pressed]) {
@@ -288,13 +275,17 @@ aside [role="banner"]::after, aside [role="contentinfo"]::after {
 	content: 'Do not put [role="banner"] or [role="contentinfo"] inside a subsection.' !important;
 }
 
-#main:not(main)::after, 
-.main:not(main)::after, 
-#main-content:not(main)::after, 
-.main-content:not(main)::after, 
-#page-content:not(main)::after, 
-.page-content:not(main)::after {
-	content: 'Use the standard <main> element to mark up the main part of your page.' !important;
+#main:not(main):not([role="main"])::after {
+    content: 'Use the standard <main> element or role of main.' !important;
+}
+
+#footer:not(footer):not([role="contentinfo"])::after {
+    content: 'Use the standard <footer> element or contentinfo role' !important;
+}
+
+#header:not(header):not([role="banner"])::after,
+#banner:not(header):not([role="banner"])::after {
+    content: 'Use the standard <footer> element or contentinfo role' !important;
 }
 
 /**
