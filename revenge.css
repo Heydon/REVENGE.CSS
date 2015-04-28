@@ -285,7 +285,7 @@ aside [role="banner"]::after, aside [role="contentinfo"]::after {
 
 #header:not(header):not([role="banner"])::after,
 #banner:not(header):not([role="banner"])::after {
-    content: 'Use the standard <footer> element or contentinfo role' !important;
+    content: 'Use the standard <footer> element or banner role' !important;
 }
 
 /**
