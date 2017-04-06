@@ -1,6 +1,6 @@
 ## REVENGE.CSS
 
-The premise of `revenge.css` is simple: A *CSS bookmarklet* that uses selectors to find bad markup, displaying ugly pink error messages in *comic sans serif* wherever you write bad HTML. If you activate the bookmarklet and the page gets lots of pink blotches, the author will have included at least one of the following:
+The premise of `revenge.css` is simple: A *CSS bookmarklet* that uses selectors to find bad markup, displaying ugly pink error messages in *comic sans serif* wherever you write bad HTML. If you activate the bookmarklet and the page gets lots of pink blotches, the author has included at least one of the following:
 
 * Misplaced &lt;div&gt;s
 * Deprecated elements
