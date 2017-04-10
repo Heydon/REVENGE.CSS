@@ -343,7 +343,7 @@ label div::after {
 	content: 'Do not disrupt the natural tab order.' !important;
 }
 
-/* Boot Crap (specific to Twitter BootStrap class misuse)
+/* Boot Crap (specific to Bootstrap class misuse)
 -----------------------------------------------------------------------------*/
 
 /* Don't use list elements to divide up list elements. 
