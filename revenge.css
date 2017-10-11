@@ -140,7 +140,8 @@ li.disabled > a[href]:not([tabindex="-1"])::after,
 li.disabled > button:not([disabled])::after, 
 a.disabled[href]:not([tabindex="-1"])::after,
 button.disabled:not([disabled])::after, 
-[data-toggle="dropdown"]:not([aria-haspopup])::after
+[data-toggle="dropdown"]:not([aria-haspopup])::after,
+span.MathJax .math::after
 {
    display: inline-block !important;
    background: #dc143c !important;
