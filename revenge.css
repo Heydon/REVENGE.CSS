@@ -277,7 +277,7 @@ Removed as <footer> conveys contentInfo natively and updated if using non native
 body > footer#footer:not([role="contentinfo"])::after, body > div > footer.footer:not([role="contentinfo"])::after {
 	content: 'Use role="contentinfo" on this footer element or use native HTML5 <footer>.' !important;
 }
-body > div#header:not([role="banner"])::after, body > div.header:not([role="banner"])::after, body > div.banner:not([role="banner"])::after, body > div#banner:not([role="banner"])::after {
+body > header#header:not([role="banner"])::after, body > header.header:not([role="banner"])::after, body > div.banner:not([role="banner"])::after, body > div#banner:not([role="banner"])::after {
 	content: 'Use role="banner" on this header element or use native <header>.' !important;
 }
 
