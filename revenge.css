@@ -240,7 +240,7 @@ embed::after, marquee::after, nobr::after, noembed::after, wbr::after {
 ----------------------------------------------------------------------
 */
 
-*:empty:not(script):not(input):not(br):not(img):not(link):not(hr):not(embed):not(area):not(command):not(col):not(param):not(source):not(track):not(wbr):not(base):not(keygen)::after {
+*:empty:not(script):not(input):not(br):not(img):not(link):not(hr):not(embed):not(area):not(command):not(col):not(param):not(source):not(track):not(wbr):not(base):not(keygen):not(span.fa)::after {
 	content: 'This element is empty. Why?' !important;
 }
 
@@ -260,14 +260,25 @@ aside > article:first-child::after,
 aside > section:first-child::after {
 	content: 'Sectioning elems are not arbitrary wrappers. Use <div>s here.' !important;
 }
+/****
+Removed as <footer> conveys contentInfo natively and
+****/
 
 body > header:not([role="banner"])::after, body > div > header:not([role="banner"])::after {
 	content: 'Use role="banner" on this header element.' !important;
 }
-
+/*
 body > footer:not([role="contentinfo"])::after, body > div > footer:not([role="contentinfo"])::after {
 	content: 'Use role="contentinfo" on this footer element.' !important;
 }
+*/
+/****
+Removed as <footer> conveys contentInfo natively and updated if using non native footer element using either class footer or id footer add role contentInfo
+****/
+body > footer#footer:not([role="contentinfo"])::after, body > div > footer.footer:not([role="contentinfo"])::after {
+	content: 'Use role="contentinfo" on this footer element or use native HTML5 <footer>.' !important;
+}
+
 
 section [role="banner"]::after, section [role="contentinfo"]::after, 
 article [role="banner"]::after, article [role="contentinfo"]::after, 
