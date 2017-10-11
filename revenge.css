@@ -231,8 +231,11 @@ button.disabled:not([disabled]):not([readonly])::after {
 acronym::after, applet::after, basefont::after, big::after, center::after, dir::after, 
 font::after, frame::after, frameset::after, isindex::after, listing::after, menu::after, multicol::after, 
 plaintext::after, strike::after, u::after, xmp::after, bgsound::after, blink::after, comment::after, 
-embed::after, marquee::after, nobr::after, noembed::after, wbr::after {
+embed::after, marquee::after, nobr::after, noembed::after, wbr::after, :not(span.MathJax .math) {
 	content: 'This element is deprecated, non-standard or obsolete.' !important;
+}
+span.MathJax .math::after {
+	content: 'This is a MathJax symbol.' !important;
 }
 
 /**
