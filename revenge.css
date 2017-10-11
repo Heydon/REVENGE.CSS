@@ -140,9 +140,7 @@ li.disabled > a[href]:not([tabindex="-1"])::after,
 li.disabled > button:not([disabled])::after, 
 a.disabled[href]:not([tabindex="-1"])::after,
 button.disabled:not([disabled])::after, 
-[data-toggle="dropdown"]:not([aria-haspopup])::after,
-span.MathJax .math::after,
-.sr-only:after
+[data-toggle="dropdown"]:not([aria-haspopup])::after
 {
    display: inline-block !important;
    background: #dc143c !important;
@@ -236,9 +234,6 @@ plaintext::after, strike::after, u::after, xmp::after, bgsound::after, blink::af
 embed::after, marquee::after, nobr::after, noembed::after, wbr::after, :not(span.MathJax .math)::after {
 	content: 'This element is deprecated, non-standard or obsolete.' !important;
 }
-span.MathJax .math::after {
-	content: 'This is a MathJax symbol.' !important;
-}
 
 /**
 * Empty elements
@@ -252,10 +247,8 @@ Added not:span.fa and i.fa to exclude icons hooks.
 }
 /**
 Icons used for pure decoration or visual styling
-
-If you're using an icon to add some extra decoration or branding, it does not need to be announced to users as they are navigating your site or app aurally. Additionally, if you're using an icon to visually re-emphasize or add styling to content already present in your HTML, it does not need to be repeated to an assistive technology-using user. You can make sure this is not read by adding the aria-hidden="true" to your Font Awesome markup.
-http://fontawesome.io/accessibility/
-****************/
+----------------------------------------------------------------------
+*/
 i.fa:not([aria-hidden="true"])::after, span.fa:not([aria-hidden="true"])::after {
     content: 'Use aria-hidden="true on icons.' !important;
 }
@@ -280,18 +273,12 @@ aside > section:first-child::after {
 
 /****
 Removed as <footer> requires role=contentInfo and <header> requires role=banner as these are already conveyed natively. W3C validator generates a warning if used.
-****/
-/*
-body > div#footer:not([role="contentinfo"])::after, body > div.footer:not([role="contentinfo"])::after {
-	content: 'Use role="contentinfo" on this footer element or use native HTML5 <footer>.' !important;
-}
-body > div#header:not([role="banner"])::after, body > div.header:not([role="banner"])::after, body > div.banner:not([role="banner"])::after, body > div#banner:not([role="banner"])::after {
-	content: 'Use role="banner" on this header element or use native <header>.' !important;
-}
+----------------------------------------------------------------------
 */
 
 /***
-if div has class or ID of header. Considering if .banner #banner should be included
+if div has class or ID of header.
+----------------------------------------------------------------------
 */
 div#header:not([role="banner"])::after, div.header:not([role="banner"])::after {
 	content: 'Use role="banner" on this header element or use native <header>.' !important;
@@ -409,8 +396,4 @@ button.disabled:not([disabled])::after {
 
 [data-toggle="dropdown"]:not([aria-haspopup])::after {
 	content: 'Indicate the hidden menu with aria-haspopup' !important;
-}
-
-.sr-only:after{
-   content: 'Off-screen text for screen reader users. Is this text necessary?' !important; 
 }
