@@ -141,7 +141,8 @@ li.disabled > button:not([disabled])::after,
 a.disabled[href]:not([tabindex="-1"])::after,
 button.disabled:not([disabled])::after, 
 [data-toggle="dropdown"]:not([aria-haspopup])::after,
-span.MathJax .math::after
+span.MathJax .math::after,
+.sr-only:after
 {
    display: inline-block !important;
    background: #dc143c !important;
@@ -408,4 +409,8 @@ button.disabled:not([disabled])::after {
 
 [data-toggle="dropdown"]:not([aria-haspopup])::after {
 	content: 'Indicate the hidden menu with aria-haspopup' !important;
+}
+
+.sr-only:after{
+   content: 'Off-screen text for screen reader users. Is this text necessary?' !important; 
 }
