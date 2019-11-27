@@ -1,146 +1,144 @@
 /*!
-* Revenge CSS v 1.0 
+* Revenge CSS v 1.0
 * Copyright 2013, Heydon Pickering: http://www.heydonworks.com
 * Released under Attribution 3.0 Unported license - http://creativecommons.org/licenses/by/3.0/
 * Please leave this comment block intact as attribution
 */
 
-a:not([href]), a[href=""], a[href$="#"], a[href^="javascript"], 
+a:not([href]), a[href=""], a[href$="#"], a[href^="javascript"],
 .button:not(button):not([role="button"]):not([type="button"]):not([type="submit"]):not([type="reset"]),
-.btn:not(button):not([role="button"]):not([type="button"]):not([type="submit"]):not([type="reset"]), 
-a[class*="button"]:not([role="button"]), 
-a[role="button"]:not([href*="/"]):not([href*="."]):not([href*="?"]), 
-a[role="button"][href=""], a[role="button"][href$="#"], a[role="button"][href^="javascript"], 
+.btn:not(button):not([role="button"]):not([type="button"]):not([type="submit"]):not([type="reset"]),
+a[class*="button"]:not([role="button"]),
+a[role="button"]:not([href*="/"]):not([href*="."]):not([href*="?"]),
+a[role="button"][href=""], a[role="button"][href$="#"], a[role="button"][href^="javascript"],
 .button:not(button):not([role="button"]):not(input),
-.btn:not(button):not([role="button"]):not(input), 
-a[class*="button"]:not([role="button"]), 
-a.button[class*="disabled"],  
-a.btn.disabled, a[class*="button"][class*="disabled"], 
-form button:not([type]), 
-a:empty:not([aria-label]):not([aria-labelledby]), 
-button:empty:not([aria-label]):not([aria-labelledby]), 
-button:not([aria-label]):not([aria-labelledby]) img:only-child:not([alt]), 
-a:not([aria-label]):not([aria-labelledby]) img:only-child:not([alt]), 
-.button:not(a):not(button):not(input), 
-.btn:not(a):not(button):not(input),  
-figcaption, 
-form:not([action]),  
-fieldset > *:first-child:not(legend), 
-button.disabled:not([disabled]):not([readonly]), 
-acronym, applet, basefont, center, dir, 
-font, frame, frameset, isindex, listing, menu, multicol, 
-plaintext, s, strike, u, xmp, bgsound, blink, comment, 
-embed, marquee, nobr, noembed, wbr, 
-*:empty:not(script), 
-section > section:first-child, 
-article > section:first-child, 
-article > article:first-child, 
-section > article:first-child, 
-section > aside:first-child, 
-aside > aside:first-child, 
-article > aside:first-child, 
-aside > article:first-child, 
-aside > section:first-child, 
-body > header:not([role="banner"]), body > div > header:not([role="banner"]),  
-body > footer:not([role="contentinfo"]), body > div > footer:not([role="contentinfo"]), 
-section [role="banner"], section [role="contentinfo"], 
-article [role="banner"], article [role="contentinfo"], 
-aside [role="banner"], aside [role="contentinfo"], 
+.btn:not(button):not([role="button"]):not(input),
+a[class*="button"]:not([role="button"]),
+a.button[class*="disabled"],
+a.btn.disabled, a[class*="button"][class*="disabled"],
+form button:not([type]),
+a:empty:not([aria-label]):not([aria-labelledby]),
+button:empty:not([aria-label]):not([aria-labelledby]),
+button:not([aria-label]):not([aria-labelledby]) img:only-child:not([alt]),
+a:not([aria-label]):not([aria-labelledby]) img:only-child:not([alt]),
+.button:not(a):not(button):not(input),
+.btn:not(a):not(button):not(input),
+figcaption,
+form:not([action]),
+fieldset > *:first-child:not(legend),
+button.disabled:not([disabled]):not([readonly]),
+acronym, applet, basefont, center, dir,
+font, frame, frameset, isindex, listing, menu, multicol,
+plaintext, s, strike, u, xmp, bgsound, blink, comment,
+embed, marquee, nobr, noembed, wbr,
+*:empty:not(script),
+section > section:first-child,
+article > section:first-child,
+article > article:first-child,
+section > article:first-child,
+section > aside:first-child,
+aside > aside:first-child,
+article > aside:first-child,
+aside > article:first-child,
+aside > section:first-child,
+section [role="banner"], section [role="contentinfo"],
+article [role="banner"], article [role="contentinfo"],
+aside [role="banner"], aside [role="contentinfo"],
 #main:not(main):not([role="main"]),
 #footer:not(footer):not([role="contentinfo"]),
 #header:not(header):not([role="banner"]),
-#banner:not(header):not([role="banner"]), 
+#banner:not(header):not([role="banner"]),
 [align], [alink], [background],
-[bgcolor], [border], [clear], 
-[height], [hspace], [link], 
-[nowrap], [start], [vlink], 
-[vspace], 
-script[language], 
-table[summary], 
-ol > *:not(li), 
-ul > *:not(li), 
-dl > *:not(dt):not(dd), 
-dt + *:not(dd), 
-abbr div, b div, i div, span div, em div, 
-strong div, small div, cite div, q div, code div, 
+[bgcolor], [border], [clear],
+[height], [hspace], [link],
+[nowrap], [start], [vlink],
+[vspace],
+script[language],
+table[summary],
+ol > *:not(li),
+ul > *:not(li),
+dl > *:not(dt):not(dd),
+dt + *:not(dd),
+abbr div, b div, i div, span div, em div,
+strong div, small div, cite div, q div, code div,
 label div,
-[tabindex]:not([tabindex="0"]):not([tabindex="-1"]), 
-li.divider:not([role="separator"]), li:empty:not([role="separator"]), 
+[tabindex]:not([tabindex="0"]):not([tabindex="-1"]),
+li.divider:not([role="separator"]), li:empty:not([role="separator"]),
 li.dropdown-header,
-.btn:not(button):not([href]), 
+.btn:not(button):not([href]),
 li.disabled > a[href]:not([tabindex="-1"]),
-li.disabled > button:not([disabled]), 
+li.disabled > button:not([disabled]),
 a.disabled[href]:not([tabindex="-1"]),
-button.disabled:not([disabled]), 
+button.disabled:not([disabled]),
 [data-toggle="dropdown"]:not([aria-haspopup]) {
-	overflow: visible !important;	
+	overflow: visible !important;
 }
 
-a:not([href])::after, a[href=""]::after, a[href$="#"]::after, a[href^="javascript"]::after, 
+a:not([href])::after, a[href=""]::after, a[href$="#"]::after, a[href^="javascript"]::after,
 .button:not(button):not([role="button"]):not([type="button"]):not([type="submit"]):not([type="reset"])::after,
-.btn:not(button):not([role="button"]):not([type="button"]):not([type="submit"]):not([type="reset"])::after, 
-a[role="button"]:not([href*="/"]):not([href*="."]):not([href*="?"])::after, 
-a[role="button"][href=""]::after, a[role="button"][href$="#"]::after, a[role="button"][href^="javascript"]::after, 
+.btn:not(button):not([role="button"]):not([type="button"]):not([type="submit"]):not([type="reset"])::after,
+a[role="button"]:not([href*="/"]):not([href*="."]):not([href*="?"])::after,
+a[role="button"][href=""]::after, a[role="button"][href$="#"]::after, a[role="button"][href^="javascript"]::after,
 a[href].button[class*="disabled"]::after,
-a[href].disabled::after,  
+a[href].disabled::after,
 a[href][class*="button"][class*="disabled"]::after,
-form button:not([type])::after, 
-a:empty:not([aria-label]):not([aria-labelledby])::after, 
-button:empty:not([aria-label]):not([aria-labelledby])::after, 
-button:not([aria-label]):not([aria-labelledby]) img:only-child:not([alt])::after, 
-a:not([aria-label]):not([aria-labelledby]) img:only-child:not([alt])::after, 
-.button:not(a):not(button):not(input)::after, 
-.btn:not(a):not(button):not(input)::after,  
-figcaption::after, 
-form:not([action])::after,  
-fieldset > *:first-child:not(legend)::after, 
-button.disabled:not([disabled]):not([readonly])::after, 
-acronym::after, applet::after, basefont::after, center::after, dir::after, 
-font::after, frame::after, frameset::after, isindex::after, listing::after, menu::after, multicol::after, 
-plaintext::after, s::after, strike::after, u::after, xmp::after, bgsound::after, blink::after, comment::after, 
-embed::after, marquee::after, nobr::after, noembed::after, wbr::after, 
-*:empty:not(script)::after, 
-section > section:first-child::after, 
-article > section:first-child::after, 
-article > article:first-child::after, 
-section > article:first-child::after, 
-section > aside:first-child::after, 
-aside > aside:first-child::after, 
-article > aside:first-child::after, 
-aside > article:first-child::after, 
-aside > section:first-child::after, 
-body > header:not([role="banner"])::after, body > div > header:not([role="banner"])::after,  
-body > footer:not([role="contentinfo"])::after, body > div > footer:not([role="contentinfo"])::after, 
-section [role="banner"]::after, section [role="contentinfo"]::after, 
-article [role="banner"]::after, article [role="contentinfo"]::after, 
-aside [role="banner"]::after, aside [role="contentinfo"]::after, 
+form button:not([type])::after,
+a:empty:not([aria-label]):not([aria-labelledby])::after,
+button:empty:not([aria-label]):not([aria-labelledby])::after,
+button:not([aria-label]):not([aria-labelledby]) img:only-child:not([alt])::after,
+a:not([aria-label]):not([aria-labelledby]) img:only-child:not([alt])::after,
+.button:not(a):not(button):not(input)::after,
+.btn:not(a):not(button):not(input)::after,
+figcaption::after,
+form:not([action])::after,
+fieldset > *:first-child:not(legend)::after,
+button.disabled:not([disabled]):not([readonly])::after,
+acronym::after, applet::after, basefont::after, center::after, dir::after,
+font::after, frame::after, frameset::after, isindex::after, listing::after, menu::after, multicol::after,
+plaintext::after, s::after, strike::after, u::after, xmp::after, bgsound::after, blink::after, comment::after,
+embed::after, marquee::after, nobr::after, noembed::after, wbr::after,
+*:empty:not(script)::after,
+section > section:first-child::after,
+article > section:first-child::after,
+article > article:first-child::after,
+section > article:first-child::after,
+section > aside:first-child::after,
+aside > aside:first-child::after,
+article > aside:first-child::after,
+aside > article:first-child::after,
+aside > section:first-child::after,
+section [role="banner"]::after, section [role="contentinfo"]::after,
+article [role="banner"]::after, article [role="contentinfo"]::after,
+aside [role="banner"]::after, aside [role="contentinfo"]::after,
 #main:not(main):not([role="main"])::after,
 #footer:not(footer):not([role="contentinfo"])::after,
 #header:not(header):not([role="banner"])::after,
-#banner:not(header):not([role="banner"])::after, 
-[align]::after, [alink]::after, [background]::after, 
-[bgcolor]::after, [border]::after, [clear]::after, 
-[height]::after, [hspace]::after, [link]::after, 
-[nowrap]::after, [start]::after, [vlink]::after, 
-[vspace]::after, 
-script[language]::after, 
-table[summary]::after, 
-ol > *:not(li)::after, 
-ul > *:not(li)::after, 
-dl > *:not(dt):not(dd)::after, 
-dt + *:not(dd)::after, 
-abbr div::after, b div::after, i div::after, span div::after, em div::after, 
-strong div::after, small div::after, cite div::after, q div::after, code div::after, 
+#banner:not(header):not([role="banner"])::after,
+[align]::after, [alink]::after, [background]::after,
+[bgcolor]::after, [border]::after, [clear]::after,
+[height]::after, [hspace]::after, [link]::after,
+[nowrap]::after, [start]::after, [vlink]::after,
+[vspace]::after,
+script[language]::after,
+table[summary]::after,
+ol > *:not(li)::after,
+ul > *:not(li)::after,
+dl > *:not(dt):not(dd)::after,
+dt + *:not(dd)::after,
+abbr div::after, b div::after, i div::after, span div::after, em div::after,
+strong div::after, small div::after, cite div::after, q div::after, code div::after,
 label div::after,
-[tabindex]:not([tabindex="0"]):not([tabindex="-1"])::after, 
-li.divider:not([role="separator"])::after, li:empty:not([role="separator"])::after, 
+[tabindex]:not([tabindex="0"]):not([tabindex="-1"])::after,
+li.divider:not([role="separator"])::after, li:empty:not([role="separator"])::after,
 li.dropdown-header::after,
-.btn:not(button):not([href])::after, 
+.btn:not(button):not([href])::after,
 li.disabled > a[href]:not([tabindex="-1"])::after,
-li.disabled > button:not([disabled])::after, 
+li.disabled > button:not([disabled])::after,
 a.disabled[href]:not([tabindex="-1"])::after,
-button.disabled:not([disabled])::after, 
-[data-toggle="dropdown"]:not([aria-haspopup])::after
+button.disabled:not([disabled])::after,
+[data-toggle="dropdown"]:not([aria-haspopup])::after,
+main:not(:first-of-type)
+
 {
    display: inline-block !important;
    background: #dc143c !important;
@@ -166,20 +164,20 @@ a[href=""]::after, a[href$="#"]::after, a[href^="javascript"]::after {
    content: 'Do you mean for this to be a <button>? It is a link that does not go anywhere!' !important;
 }
 
-.button:not(a):not(button):not(input):not([tabindex])::after, 
+.button:not(a):not(button):not(input):not([tabindex])::after,
 .btn:not(a):not(button):not(input):not([tabindex])::after {
 	content: 'You are not using a standard focusable element for your "button". Can keyboard users focus on it?' !important;
 }
 
-a[role="button"]:not([href*="/"]):not([href*="."]):not([href*="?"])::after, 
+a[role="button"]:not([href*="/"]):not([href*="."]):not([href*="?"])::after,
 a[role="button"][href=""]::after, a[role="button"][href$="#"]::after, a[role="button"][href^="javascript"]::after {
    content: 'Either use a proper href fallback or just use a button element.' !important;
 }
 
 a[href].button[class*="disabled"]::after,
-a[href].disabled::after,  
+a[href].disabled::after,
 a[href][class*="button"][class*="disabled"]::after {
-   content: 'You cannot disable a hyperlink. Use a button element with disabled attribute or remove the href' !important; 
+   content: 'You cannot disable a hyperlink. Use a button element with disabled attribute or remove the href' !important;
 }
 
 [class*="toggle"]:not([aria-pressed]) {
@@ -190,9 +188,9 @@ form button:not([type])::after {
 	content: 'Is this a submit button, a reset button or just a button? Use type="submit", type="reset" or type="button".' !important;
 }
 
-a:empty:not([aria-label]):not([aria-labelledby])::after, 
-button:empty:not([aria-label]):not([aria-labelledby])::after, 
-button:not([aria-label]):not([aria-labelledby]) img:only-child:not([alt])::after, 
+a:empty:not([aria-label]):not([aria-labelledby])::after,
+button:empty:not([aria-label]):not([aria-labelledby])::after,
+button:not([aria-label]):not([aria-labelledby]) img:only-child:not([alt])::after,
 a:not([aria-label]):not([aria-labelledby]) img:only-child:not([alt])::after {
 	content: 'All buttons and links should have text content, an image with alt text or an ARIA label.' !important;
 }
@@ -228,9 +226,9 @@ button.disabled:not([disabled]):not([readonly])::after {
 ----------------------------------------------------------------------
 */
 
-acronym::after, applet::after, basefont::after, big::after, center::after, dir::after, 
-font::after, frame::after, frameset::after, isindex::after, listing::after, menu::after, multicol::after, 
-plaintext::after, strike::after, u::after, xmp::after, bgsound::after, blink::after, comment::after, 
+acronym::after, applet::after, basefont::after, big::after, center::after, dir::after,
+font::after, frame::after, frameset::after, isindex::after, listing::after, menu::after, multicol::after,
+plaintext::after, strike::after, u::after, xmp::after, bgsound::after, blink::after, comment::after,
 embed::after, marquee::after, nobr::after, noembed::after, wbr::after {
 	content: 'This element is deprecated, non-standard or obsolete.' !important;
 }
@@ -249,43 +247,40 @@ embed::after, marquee::after, nobr::after, noembed::after, wbr::after {
 ----------------------------------------------------------------------
 */
 
-section > section:first-child::after, 
-article > section:first-child::after, 
-article > article:first-child::after, 
-section > article:first-child::after, 
-section > aside:first-child::after, 
-aside > aside:first-child::after, 
-article > aside:first-child::after, 
-aside > article:first-child::after, 
+section > section:first-child::after,
+article > section:first-child::after,
+article > article:first-child::after,
+section > article:first-child::after,
+section > aside:first-child::after,
+aside > aside:first-child::after,
+article > aside:first-child::after,
+aside > article:first-child::after,
 aside > section:first-child::after {
 	content: 'Sectioning elems are not arbitrary wrappers. Use <div>s here.' !important;
 }
 
-body > header:not([role="banner"])::after, body > div > header:not([role="banner"])::after {
-	content: 'Use role="banner" on this header element.' !important;
-}
 
-body > footer:not([role="contentinfo"])::after, body > div > footer:not([role="contentinfo"])::after {
-	content: 'Use role="contentinfo" on this footer element.' !important;
-}
-
-section [role="banner"]::after, section [role="contentinfo"]::after, 
-article [role="banner"]::after, article [role="contentinfo"]::after, 
+section [role="banner"]::after, section [role="contentinfo"]::after,
+article [role="banner"]::after, article [role="contentinfo"]::after,
 aside [role="banner"]::after, aside [role="contentinfo"]::after {
 	content: 'Do not put [role="banner"] or [role="contentinfo"] inside a subsection.' !important;
 }
 
 #main:not(main):not([role="main"])::after {
-    content: 'Use the standard <main> element or role of main.' !important;
+    content: 'Use the standard <main> element (best) or role of main.' !important;
 }
 
 #footer:not(footer):not([role="contentinfo"])::after {
-    content: 'Use the standard <footer> element or contentinfo role' !important;
+    content: 'Use the standard <footer> element (best) or contentinfo role' !important;
 }
 
 #header:not(header):not([role="banner"])::after,
 #banner:not(header):not([role="banner"])::after {
-    content: 'Use the standard <header> element or banner role' !important;
+    content: 'Use the standard <header> element (best) or banner role' !important;
+}
+
+main:not(:first-of-type)::after {
+    content: 'Check: Only one <main> element without hidden attribute allowed' !important;
 }
 
 /**
@@ -310,7 +305,7 @@ table[summary]::after {
 ----------------------------------------------------------------------
 */
 
-ol > *:not(li)::after, 
+ol > *:not(li)::after,
 ul > *:not(li)::after {
 	content: 'Only <li> can be a direct child of <ul> or <ol>.' !important;
 }
@@ -328,8 +323,8 @@ dt + *:not(dd)::after {
 ----------------------------------------------------------------------
 */
 
-abbr div::after, b div::after, i div::after, span div::after, em div::after, 
-strong div::after, small div::after, cite div::after, q div::after, code div::after, 
+abbr div::after, b div::after, i div::after, span div::after, em div::after,
+strong div::after, small div::after, cite div::after, q div::after, code div::after,
 label div::after {
 	content: 'Do not put <div>s inside inline elements.' !important;
 }
@@ -346,15 +341,15 @@ label div::after {
 /* Boot Crap (specific to Twitter BootStrap class misuse)
 -----------------------------------------------------------------------------*/
 
-/* Don't use list elements to divide up list elements. 
-Use a class-based style on the preceeding or proceeding element or use role="separator" 
+/* Don't use list elements to divide up list elements.
+Use a class-based style on the preceeding or proceeding element or use role="separator"
 on the item in question */
 
 li.divider:not([role="separator"])::after, li:empty:not([role="separator"])::after {
 	content: 'Do not use list items to divide up lists unless they have role = separator' !important;
 }
 
-/* For obvious reasons, a header for a list should not be an item in that list. 
+/* For obvious reasons, a header for a list should not be an item in that list.
 Make two lists! */
 
 li.dropdown-header::after {
@@ -370,7 +365,7 @@ li.dropdown-header::after {
 /* Disabled links and buttons should be disabled correctly */
 
 li.disabled > a[href]:not([tabindex="-1"])::after,
-li.disabled > button:not([disabled])::after, 
+li.disabled > button:not([disabled])::after,
 a.disabled[href]::after,
 button.disabled:not([disabled])::after {
 	content: 'Disable buttons with disabled attr and links by removing href' !important;
