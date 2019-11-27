@@ -280,7 +280,7 @@ aside [role="banner"]::after, aside [role="contentinfo"]::after {
 }
 
 main:not(:first-of-type)::after {
-    content: 'Only use one <main> element per page' !important;
+    content: 'Check: Only one <main> element without hidden attribute allowed' !important;
 }
 
 /**
