@@ -229,7 +229,7 @@ button.disabled:not([disabled]):not([readonly])::after {
 acronym::after, applet::after, basefont::after, big::after, center::after, dir::after, 
 font::after, frame::after, frameset::after, isindex::after, listing::after, menu::after, multicol::after, 
 plaintext::after, strike::after, u::after, xmp::after, bgsound::after, blink::after, comment::after, 
-embed::after, marquee::after, nobr::after, noembed::after, wbr::after {
+embed::after, marquee::after, nobr::after, noembed::after, wbr::after, :not(span.MathJax .math)::after {
 	content: 'This element is deprecated, non-standard or obsolete.' !important;
 }
 
@@ -237,9 +237,18 @@ embed::after, marquee::after, nobr::after, noembed::after, wbr::after {
 * Empty elements
 ----------------------------------------------------------------------
 */
-
-*:empty:not(script):not(input):not(br):not(img):not(link):not(hr):not(embed):not(area):not(command):not(col):not(param):not(source):not(track):not(wbr):not(base):not(keygen)::after {
+/***
+Added not:span.fa and i.fa to exclude icons hooks.
+***/
+*:empty:not(script):not(input):not(br):not(img):not(link):not(hr):not(embed):not(area):not(command):not(col):not(param):not(source):not(track):not(wbr):not(base):not(keygen):not(span.fa):not(i.fa)::after {
 	content: 'This element is empty. Why?' !important;
+}
+/**
+Icons used for pure decoration or visual styling
+----------------------------------------------------------------------
+*/
+i.fa:not([aria-hidden="true"])::after, span.fa:not([aria-hidden="true"])::after {
+    content: 'Use aria-hidden="true on icons.' !important;
 }
 
 /**
@@ -259,13 +268,20 @@ aside > section:first-child::after {
 	content: 'Sectioning elems are not arbitrary wrappers. Use <div>s here.' !important;
 }
 
-body > header:not([role="banner"])::after, body > div > header:not([role="banner"])::after {
-	content: 'Use role="banner" on this header element.' !important;
+
+/****
+Removed as <footer> requires role=contentInfo and <header> requires role=banner as these are already conveyed natively. W3C validator generates a warning if used.
+----------------------------------------------------------------------
+*/
+
+/***
+if div has class or ID of header.
+----------------------------------------------------------------------
+*/
+div#header:not([role="banner"])::after, div.header:not([role="banner"])::after {
+	content: 'Use role="banner" on this header element or use native <header>.' !important;
 }
 
-body > footer:not([role="contentinfo"])::after, body > div > footer:not([role="contentinfo"])::after {
-	content: 'Use role="contentinfo" on this footer element.' !important;
-}
 
 section [role="banner"]::after, section [role="contentinfo"]::after, 
 article [role="banner"]::after, article [role="contentinfo"]::after, 
