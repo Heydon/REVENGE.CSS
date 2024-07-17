@@ -1,0 +1,7 @@
+:root {
+  --outline-thickness: 0.25rem;
+  --outline-style: solid;
+  --error-outline: var(--outline-thickness) var(--outline-style) crimson;
+  --warning-outline: var(--outline-thickness) var(--outline-style) darkorange;
+  --note-outline: var(--outline-thickness) var(--outline-style) yellowgreen;
+}

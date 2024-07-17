@@ -1,0 +1,14 @@
+figure:not(:has(figcaption)) {
+  outline: var(--warning-outline);
+  --warning-no-figcaption: 'The figure does not have a figcaption. There’s little point in using a figure without one.'
+}
+
+img[srcset]:not([src]) {
+  outline: var(--warning-outline);
+  --warning-srcset-no-src: 'The image has a `srcset` property but no `src` fallback.'
+}
+
+:not(:is(header, [role="banner"])) :not(img[loading="lazy"]) {
+  outline: var(--warning-outline);
+  --warning-not-lazy: 'The image does not appear to be needed imminently but does not use `loading="lazy"`.'
+}

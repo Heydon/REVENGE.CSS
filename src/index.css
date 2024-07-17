@@ -1,0 +1,8 @@
+@layer settings, notes, warnings, errors;
+
+/* global settings */
+@import url('settings.css') layer(settings);
+
+/* images */
+@import url('images/warnings.css') layer(warnings);
+@import url('images/errors.css') layer(errors);

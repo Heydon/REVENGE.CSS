@@ -1,0 +1,39 @@
+img:not([alt]) {
+  outline: var(--error-outline);
+  --error-no-alt: 'The image does not have an alt attribute. If it is a decorative image, apply `alt=""`.';
+}
+
+img[alt]:not([alt=""])[aria-hidden] {
+  outline: var(--error-outline);
+  --error-non-empty-alt-hidden: 'The image is not treated as decorative but is hidden using the `aria-hidden` property.';
+}
+
+figcaption:empty {
+  outline: var(--error-outline);
+  --error-empty-figcaption: 'The figcaption is empty. The intent to supply a caption has not been met.'
+}
+
+svg:is(:not([width]), :not([height])) {
+  outline: var(--error-outline);
+  --error-stray-figcaption: 'The SVG is lacking a width, height, or both. It will become unconstrained in the absence of CSS.';
+}
+
+svg:not(:has(title)):not([aria-label]):not([aria-labelledby]):not([aria-hidden]) {
+  outline: var(--error-outline);
+  --error-svg-not-hidden: 'The SVG has no explicit labelling method but is not hidden from assistive technologies.';
+}
+
+figcaption:not(figure figcaption) {
+  outline: var(--error-outline);
+  --error-stray-figcaption: 'A figcaption exists outside a `<figure>` element, where it cannot provide a caption correctly.';
+}
+
+img[srcset]:not([srcset*=" "]):not([srcset*=","]) {
+  outline: var(--error-outline);
+  --error-srcset-no-src: 'The image does not appear to have a `srcset` in a useful format.';
+}
+
+picture:not(:has(source)) {
+  outline: var(--error-outline);
+  --error-picture-no-img: 'The `<picture>` element does not have any `<source>` elements associated with it.'
+}
