@@ -10,17 +10,22 @@ img[alt]:not([alt=""])[aria-hidden] {
 
 figcaption:empty {
   outline: var(--error-outline);
-  --error-empty-figcaption: 'The figcaption is empty. The intent to supply a caption has not been met.'
+  --error-empty-figcaption: 'The figcaption is empty. The intent to supply a caption has not been met.';
+}
+
+figure:not(:is([aria-label], [aria-labelledby])):not(:has(figcaption)) {
+  outline: var(--error-outline);
+  --error-no-figure-label: 'The figure is not labeled by any applicable method';
+}
+
+figure > figcaption ~ figcaption {
+  outline: var(--error-outline);
+  --error-multiple-figcaptions: 'There are two figcaptions for one figure';
 }
 
 svg:is(:not([width]), :not([height])) {
   outline: var(--error-outline);
   --error-stray-figcaption: 'The SVG is lacking a width, height, or both. It will become unconstrained in the absence of CSS.';
-}
-
-svg:not(:has(title)):not([aria-label]):not([aria-labelledby]):not([aria-hidden]) {
-  outline: var(--error-outline);
-  --error-svg-not-hidden: 'The SVG has no explicit labelling method but is not hidden from assistive technologies.';
 }
 
 figcaption:not(figure figcaption) {
@@ -35,5 +40,5 @@ img[srcset]:not([srcset*=" "]):not([srcset*=","]) {
 
 picture:not(:has(source)) {
   outline: var(--error-outline);
-  --error-picture-no-img: 'The `<picture>` element does not have any `<source>` elements associated with it.'
+  --error-picture-no-img: 'The `<picture>` element does not have any `<source>` elements associated with it.';
 }

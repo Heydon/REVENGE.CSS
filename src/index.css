@@ -6,3 +6,11 @@
 /* images */
 @import url('images/warnings.css') layer(warnings);
 @import url('images/errors.css') layer(errors);
+
+/* headings */
+@import url('headings/warnings.css') layer(warnings);
+@import url('headings/errors.css') layer(errors);
+
+/* lists */
+@import url('lists/warnings.css') layer(warnings);
+@import url('lists/errors.css') layer(errors);
