@@ -1,0 +1,29 @@
+:is(h1, [aria-level="1"]) + :is(h1, [aria-level="1"]),
+:is(h2, [aria-level="2"]) + :is(h2, [aria-level="2"]),
+:is(h3, [aria-level="3"]) + :is(h3, [aria-level="3"]),
+:is(h4, [aria-level="4"]) + :is(h4, [aria-level="4"]),
+:is(h5, [aria-level="5"]) + :is(h5, [aria-level="5"]),
+:is(h6, [aria-level="6"]) + :is(h6, [aria-level="6"]) {
+  outline: var(--error-outline);
+  --error-adjacent-heading-levels: 'There are two headings of the same level, one after another. The first one does not introduce any content of its own, so should be removed.'; 
+}
+
+button[role="heading"], a[role="heading"] {
+  outline: var(--error-outline);
+  --error-heading-override-interactive: 'An interactive element’s role has been suppressed with a heading role.';
+}
+
+:not(h1, h2, h3, h4, h5, h6, [role="heading"])[aria-level] {
+  outline: var(--error-outline);
+  --error-no-heading-role: 'Only native heading elements and elements with the heading ARIA role can take an `aria-level` value.';
+}
+
+:is(section, article, main):not(:has(h1, h2, h3, h4, h5, h6, [role="heading"])) {
+  outline: var(--error-outline);
+  --error-no-section-heading: 'Sectioning content lacks headings. Headings are important for labelling sections of the page.';
+}
+
+:is(section, article, aside, nav, main, [role="region"]) > :is(section, article, aside, nav, main, [role="region"]) {
+  outline: var(--error-outline);
+  --error-stacked-sections: 'Sectioning elements wrap each other without headings or content, as if they were `<div>`s.';
+}

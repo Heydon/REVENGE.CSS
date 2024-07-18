@@ -1,0 +1,4 @@
+:is(ol, ul) > :not(li) {
+  outline: var(--error-outline);
+  --error-child-not-li: '`<ol>` and `<ul>` elements can only have `<li>` elements as children.'; 
+}

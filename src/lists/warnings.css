@@ -1,0 +1,4 @@
+:is(ul, ol) > li:only-child {
+  outline: var(--warning-outline);
+  --warning-single-list-item: 'If a list only has one item, is it really a list?';
+}

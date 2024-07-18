@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heading tests</title>
+    <style>
+      @import url('../src/index.css');
+    </style>
+  </head>
+  <body>
+    <h1>Heading tests</h1>
+    <h2><code>--error-adjacent-heading-levels</code></h2>
+    <div>
+      <h2>First h2 heading</h2>
+      <h2>Second h2 heading</h2>
+    </div>
+    <hr>
+    <h2><code>--error-heading-override-interactive</code></h2>
+    <div>
+      <button role="heading">Has heading role</button>
+    </div>
+    <hr>
+    <h2><code>--error-skipped-heading-level</code></h2>
+    <div>
+      <h3>h3 heading</h3>
+      <h5>h5 heading</h5>
+    </div>
+    <hr> 
+    <h2><code>--error-no-heading-role</code></h2>
+    <div>
+      <div aria-level="3">Some random element with <code>aria-level</code></div>
+    </div>
+    <hr> 
+  </body>
+</html>
